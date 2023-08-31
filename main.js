@@ -1,4 +1,4 @@
-const baseURL = 'http://api.weatherapi.com/v1/current.json?key=e9dcfb8adcb84893b0c182913232908&q=';
+const baseURL = 'https://api.weatherapi.com/v1/current.json?key=e9dcfb8adcb84893b0c182913232908&q=';
 let url;
 
 const searchedZip = document.querySelector('.zipCodeField');
