@@ -113,7 +113,7 @@ function displayWeather(myJson) {
             document.body.style.backgroundImage = "url('./assets/snowy.jpg')";
             break;
         default:
-    };
+    }
     
     };
 
