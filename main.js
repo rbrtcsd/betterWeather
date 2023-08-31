@@ -68,7 +68,7 @@ function displayWeather(myJson) {
         case 1009:
         case 1135:
         case 1147:
-            document.body.style.backgroundImage = "url('./assets/cloudy.jpg)";
+            document.body.style.backgroundImage = "url('./assets/cloudy.jpg')";
             break;
         case 1030: // Rainy Conditions
         case 1063:
