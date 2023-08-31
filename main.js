@@ -12,7 +12,7 @@ searchForm.addEventListener('submit', fetchResults);
 
 function fetchResults(e) {
     e.preventDefault();
-    url = baseURL + searchedZip.value;
+    url = baseURL + searchedZip.value + '&aqi=no';
     console.log(url)
 
 fetch(url) 
@@ -25,6 +25,9 @@ fetch(url)
 };
 
 function displayWeather(myJson) {
+    while (section.firstChild) { // starts a loop as long as the section has a first child
+        section.removeChild(section.firstChild); // removes the first child / clears the results
+      }
     let conditions = myJson.current;
     let locations = myJson.location
     console.log(conditions)
